@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Contact | Axiom EV Products</title>
+    <style>
+        p, ol{
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="desk-menu">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand " href="#">
+                        <img src="./img/favicon_axiom.png" alt="" width="30" height="30"
+                            class="d-inline-block align-text-center">
+                        Axiom
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0" class="desk-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faqs">Faq's</a>
+                        </li>
+                        <li class="nav-item">
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div>
+                    <button class="btn btn-dark text-white mobile-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fa fa-bars"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./service.html">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="contact " >
+            <h1 class="text-center py-5">Reach us</h1>
+            <div class="container">
+                <div class="row my-5">
+
+
+                    <div class="col-md-6 my-4">
+                        <form action="email.php" method="get" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your name" required pattern="[Aa-Zz]" maxlength="32" name="Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
+                                <input type="tel" pattern="[0-9]{10}" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your Mobile Number" required name="phone">
+                            </div>
+                            <label for="exampleFormControlInput1" for="job" class="form-label">Applying for</label>
+                            <select class="form-select" aria-label="Default select example" required name="job" id="job">
+                                <option selected value="">Choose felid</option>
+                                <option value="Dealership Enquiry">Dealership Enquiry</option>
+                                <option value="Purchase of products">Purchase of products</option>
+                                <option value="Investment">Investment</option>
+                                <option value="Supplier Query">Supplier Query</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <!--<div class="my-3">-->
+                            <!--    <label for="exampleFormControlInput1" class="form-label">Resume</label>-->
+                            <!--    <input type="file" class="form-control" id="exampleFormControlInput1"-->
+                            <!--        placeholder="Upload your resume" name="fileupload" required name="resume" value="Upload Resume">-->
+                                   
+                            <!--    </div>-->
+                                <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                <input type="text"  class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your subject" required name="subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    required name="message"> </textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 my-4">
+
+
+                        <div class="mb-4 text-center">
+                            <div class="card p-4 border-0 shadow-sm p-3 mb-5 bg-white rounded">
+                                <h5>Call us</h5>
+                                <p> Toll free 1800 572 4748</p>
+                                <p>Enquiry: 99590 55158</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <div class="card p-4 border-0 shadow-sm p-3 mb-5 bg-white rounded">
+                                <h5>Email us</h5>
+                                <p>info@axiomenergy.co.in</p>
+                            
+
+                            </div>
+                        </div>
+                        <div class=" text-center mb-4">
+                            <div class="card p-4 border-0 shadow-sm p-3 mb-5 bg-white rounded">
+                                <h5>Address</h5>
+                                <p>
+                                    Plot No: 207/4&5 Phase II, <br> IDA Cherlapally,
+                                    Hyderabad- 500051, <br> Telangana, INDIA.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="faqs" class="bg-dark text-white" >
+            <div class="container">
+                <h1 class="text-center py-5">FAQ's</h1>
+                <div class="row">
+                  <div class="col">
+                      <h5>From where can I buy Axiom charger</h5>
+                      <p>Please fill the Form above. Our representative will call you within 48hours.</p>
+                      <hr>
+                      <h5>How can I contact for service enquiry</h5>
+                      <p>Please fill the Form above. Our representative will call you within 24 hours.</p>
+                      <hr>
+                      <h5> What is the procedure for dealership</h5>
+                      <p>Please fill the Form above. Our representative will call you within 48 hours.</p>
+                      <hr>
+                      <h5>What all products Axiom manufactures</h5>
+                      <p><ol type="1">
+                          <li>    Chargers for 2 wheeler & 3 wheeler [ Lead acid or lithium-ion batteries ]
+                           </li>
+                            <li>DC-DC Converters for 2 wheeler & 3 wheeler applications.</li>
+                      </ol></p>
+                      <hr>
+                      <h5>What is the Axiom Product warranty</h5>
+                      <p>12 months against any manufacture defects.</p>
+                      <hr>
+                      <h5>How and where can I get my product serviced</h5>
+                      <p>Get your complain registered at (Toll Free: 1800-572-4748). If you have difficulties in registering on toll free number kindly fill the form and our representative will contact you in 24 hours.
+                        Form here.</p>
+                      <hr>
+                      <h5>How are Axiom products better than its competitors</h5>
+                      <p>Axiom has built its mark in the field of power conversion on the back of product quality. With over two decade’s experience in EV charger design and manufacturing, we are well versed with various nuances of delivering a reliable product. System integration, vehicle integration, power-line issues, atmospheric issues are all considered in our designs. We ensure highest material quality and design margins while always striving to make products suited for indian conditions.</p>
+                      <hr>
+                      <h5>What is the charging time</h5>
+                      <p>It depends on the battery capacity.
+                          
+                        The general rule of thumb</p>
+                        <br>
+                       <span class=" bg-white text-dark p-2">
+                     
+                            Charging time = capacity(Ah) / charger current(A) * 1.25
+                       </span>
+                      <hr>
+                      <h5> Does same charger charge both lead and Lithium battery </h5>
+                      <p>No, For the both the batteries the charging profile is completely different . The profiles are factory set.</p>
+                      <hr>
+                      <h5> What is the out of warranty service cost</h5>
+                      <p>Refer the chart given below:- Warranty & Cost</p>
+                      <hr>
+                      <h5>What is the product life</h5>
+                      <p>We consider the design life / service life of the product to be anywhere between 5-7years for Off board products and 7-10 years for onboard products.</p>
+                      <hr>
+                      <h5>How will Axiom products perform in different seasons with temperature change</h5>
+                      <p>
+                          <ol type="1">
+                              <li>Lead acid battery charger – during winter in LA batteries, the profile has to be altered in order to retain the full charge capability however in our latest models we can automatically change the profile in accordance with the temperature.</li>
+                              <li>Lithium ion battery charger -Lithium Ion batteries are sensitive to change in temperature and it can have a detrimental impact on the life of the battery. To protect the battery from this our chargers can accept communication from BMS to regulate the charging in accordance with the battery temperature. We have CAN communication capability available with some of our chargers for the same.</li>
+                          </ol>
+                      </p>
+                      <hr>
+                      <h5>How do I clean Axiom Products</h5>
+                      <p>We only recommend dry cleaning of exteriors with a clean cloth. For off board chargers ( Chargers with cooling via fan and open air vents on both sides) any form of liquid cleaning is to be completely avoided. Only onboard chargers with IP 67 rating ( completely sealed chargers which may have fans on top) and above to be cleaned with liquid.</p>
+                      <hr>
+                      <h5>What is all covered under warranty</h5>
+                      <p>Generally warranty is considered against any manufacturing defects. however the fallowing may be a list of exceptions (but not limited to only these)
+                          <ol type="1">
+                              <li>Connector damages</li>
+                              <li>Any liquid ingress</li>
+                              <li>Tampering with warranty sticker</li>
+                              <li>Physical damages to the charger</li>
+                              <li>Damages to any external fans, cables,</li>
+                              <li>unauthorized opening or servicing of products</li>
+                          </ol>
+                      </p>
+                      <hr>
+                      <h5>How to apply for extended warranty.</h5>
+                      <p>Extended warranty will be available when purchasing charger first time. for other information kindly contact our service team: 1800-572-4748.</p>
+                      <hr>
+                      <h5>Can I use my 48V charger to charge my 60V battery or vice versa</h5>
+                      <p>No, This may damage the battery management system in Lithium ion batteries. Even incise of lead acid batteries this may over charge or under charge the batteries there by causing permanent damage to them.</p>
+                      <hr>
+                      <h5>How can I know there is a fault in the product</h5>
+                      <p >The following can be the possible symptoms of internal failure:
+                          <br>
+                       <ol type="1">
+                        <li>If the LED is are completely not glowing despite input power being available.</li>
+                        <li>If only red LED glows despite input power being available.</li>
+                        <li>if fan doesn’t rotate (LEDs may glow or may not glow ).</li>
+                        <li>If LEDs blink randomly or unusually from their regular behaviour.</li>
+                        
+                       </ol>
+                      </p>
+
+
+                  </div>
+                </div>
+                </div>
+        </section>
+
+
+    </main>
+    <hr>
+    <footer class="bd-footer  bg-dark text-white text-center">
+        <div class="container py-5">
+            <div class="row">
+
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="./about.html">About</a></li>
+                        <li class="mb-2"><a href="./service.html">Service</a></li>
+                        <li class="mb-2"><a href="./contact.html">Contact</a></li>
+                        <!-- <li class="mb-2"><a href="#">Blog</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Chargers</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480006.pdf">48V06A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480010.pdf">48V10A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480015.pdf">48V15A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480018.pdf">48V18A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2EA480025.pdf">48V25A</a></li>
+
+
+
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Chargers</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/C2CK480030 .pdf">48V30A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2CK600006.pdf">60V06A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK600010.pdf">60V10A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2AK600015.pdf">60V15A</a></li>
+                        <li class="mb-2"><a href="#">72V10A</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>DC-DC Converters</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/B1KK120010.pdf">48V/12V-15A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C1EE120030.pdf">48V/12V-30A</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Privacy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Terms-Conditions.html">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="./Disclaimer.html">Disclaimer</a></li>
+                        <li class="mb-2"><a href="./privacy-policy.html">Privacy & Policy</a></li>
+                        <!-- <li class="mb-2"><a href="#">Career</a></li> -->
+                        <!-- <li class="mb-2"><a href="#">Help</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark ">
+            <div class="row text-center">
+                <ul class="list-unstyled small text-muted ">
+                    <li class="mb-0" py-2>Designed and built with all the love by <a
+                            href="https://github.com/sawarkar-bhongir"> Axiom. </a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>Service | Axiom EV Products</title>
+    <style>
+        .inv {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        .location-box {
+            margin-top: 100px;
+            width: 100%;
+            /* height: auto;
+            border: 1px solid black; */
+            /* background: #f2f2f23a; */
+            padding: 16px;
+            color: white;
+            position: relative;
+
+        }
+
+        .search {
+
+            padding: 16px;
+
+
+        }
+
+        #service {
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 0, 0)), url(./img/solder.JPG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* background: #000; */
+            background-origin: border-box;
+
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        #search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="desk-menu">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand " href="#">
+                        <img src="img/favicon_axiom.png" alt="" width="30" height="30"
+                            class="d-inline-block align-text-center">
+                        Axiom
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 desk-menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faqs">FAQ's</a>
+                        </li>
+                        <li class="nav-item">
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div>
+                    <button class="btn btn-dark text-white mobile-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fa fa-bars"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./service.html">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section id="service">
+
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-10 mx-auto" id="search-box">
+                        <select id="target" class="search">
+                            <option value="Search Service center ">Search Service center </option>
+                            <!-- <option value="Andhra Pradesh">Andhra Pradesh</option> -->
+                            <!-- <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option> -->
+                            <!-- <option value="Arunachal Pradesh">Arunachal Pradesh</option> -->
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <!-- <option value="Chandigarh">Chandigarh</option>  -->
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <!-- <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option> -->
+                            <option value="Delhi">Delhi</option>
+                            <!-- <option value="Lakshadweep">Lakshadweep</option> -->
+                            <!-- <option value="Puducherry">Puducherry</option> -->
+                            <!-- <option value="Goa">Goa</option> -->
+                            <!-- <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option> -->
+                            <option value="Jharkhand">Jharkhand</option>
+                            <!-- <option value="Karnataka">Karnataka</option> -->
+                            <!-- <option value="Kerala">Kerala</option> -->
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <!-- <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option> -->
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <!-- <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option> -->
+                            <option value="Telangana">Telangana</option>
+                            <!-- <option value="Tripura">Tripura</option> -->
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <select>
+
+                                <div class="location-box">
+
+                                    <div id="Search Service center " class="inv">Search Service center </div>
+                                    <!-- <div id="Andhra Pradesh" class="inv">Andhra Pradesh</div> -->
+                                    <!-- <div id="Andaman and Nicobar Islands" class="inv">Andaman and Nicobar Islands</div> -->
+                                    <!-- <div id="Arunachal Pradesh" class="inv">Arunachal Pradesh</div> -->
+                                    <div id="Assam" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Dey tyre and auto parts.
+                                                </h5>
+                                                <p>AK Dev Road. Fatashil Bazar. Po- Bharalumukh. Guwahati. Assam-781009.
+                                                </p>
+                                                <p>8638143612
+                                                    <br>Guwahati
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>ANIKA AUTO MOBILES
+                                                </h5>
+                                                <p>Sonai Road Silchar, Near Aulia Bazar Silchar District Cachar,silichar
+                                                </p>
+                                                <p>7035946534
+                                                    <br>SILCHAR
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="Bihar" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Laxmi Enterprise
+                                                </h5>
+                                                <p>Bara bazar Naya tola Near Shiv Mandir chowk Katihar Bihar-854105
+                                                </p>
+                                                <p>70043 74133
+                                                    <br>
+                                                    Katihar
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>ROHINI ENTERPRISES
+
+                                                </h5>
+                                                <p>Rukunpura,Bailey road,Near R.M.TRADERS,New Devi Mandir,patna-800014
+
+                                                </p>
+                                                <p>7488215195/7781007856
+                                                    <br>
+                                                    PATNA
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>ROHINI ENTERPRISES
+
+                                                </h5>
+                                                <p>159 AYODHAYA DHAM BHAGWAT NAGAR,PATNA,PIN-800026
+
+
+                                                </p>
+                                                <p>8102928185
+
+                                                    <br>
+                                                    PATNA
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>SHRI AUTOMOBILES
+
+
+                                                </h5>
+                                                <p>NA,SURAJ NAGAR KENDUA,NAWADA,BIHAR-805123
+
+
+
+                                                </p>
+                                                <hr>
+                                                <p>6202003838
+
+
+                                                    <br>
+                                                    Nawada
+
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>R & M Motors
+
+
+                                                </h5>
+                                                <p>Kacchi Pakki road near mai asthan muzaffarpur bihar 842002
+
+
+
+
+                                                </p>
+                                                <p>6207598399/8083432981
+
+
+                                                    <br>
+                                                    Miuzzaffarpur
+
+
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>D R Enterprises</h5>
+                                                <p>Ander kila hajipur vaishali Bihar - 844101</p>
+                                                <p>8797844498/9523097249
+                                                    <br>
+                                                    Hazipur</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>MANAROMA ECO
+                                                </h5>
+                                                <p>ward no 12 deo bhawan,c/o mintoo prasad ramdhanpur,gaya bihar-823001
+                                                </p>
+                                                <p>9473267501<br>
+                                                    GAYA</p>
+                                                    <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>DS Enterprises
+
+                                                </h5>
+                                                <p>NA, GAGANDIWAN, BIHARSHRIF NALANDA
+
+
+                                                </p>
+                                                <p>6203480735
+                                                    <br>
+                                                    Nalanda
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>Resident Engineer</h5>
+                                                <p>Madhubani <br>Dharbanga<br>Samastipur</p>
+                                                <hr>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                     <div id="Chhattisgarh" class="inv">
+                                        <h5>E AUTO
+                                        </h5>
+                                        <p>Shrinagar Road, Near Mahesh Bhawan, Mahesh colony, Gudhiyari,
+                                            Raipur,Chhattisgarh 492001
+                                        </p>
+                                        <p>9425545497
+                                            <br>
+                                            RAIPUR
+
+                                        </p>
+                                    </div> 
+                                    <!-- <div id="Dadar and Nagar Haveli" class="inv">Dadar and Nagar Haveli</div> -->
+                                    <!-- <div id="Daman and Diu" class="inv">Daman and Diu</div> -->
+                                    <div id="Delhi" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>K LAL
+
+                                                </h5>
+                                                <p>2E/13, JHANDEWALAN EXTN, SWAMY RAM TIRATH NAGAR,
+                                                    New Delhi
+
+
+                                                </p>
+                                                <p>9999751571
+
+
+                                                    <br>
+                                                    JHANDELWALAN
+
+
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748
+                                                    <br>
+                                                    Sonipat
+
+                                                </p>
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748
+                                                    <br>
+                                                    Rohini,Delhi
+
+                                                </p>
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748
+                                                    <br>
+                                                    Noida
+
+
+                                                </p>
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748
+                                                    <br>
+                                                    Delhi
+
+
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div id="Lakshadweep" class="inv">Lakshadweep</div> -->
+                                    <div id="Puducherry" class="inv">Puducherry</div>
+                                    <!-- <div id="Goa" class="inv">Goa</div> -->
+                                    <div id="Gujarat" class="inv">Gujarat</div>
+                                    <div id="Haryana" class="inv">Haryana</div>
+                                    <div id="Himachal Pradesh" class="inv">Himachal Pradesh</div>
+                                    <div id="Jammu and Kashmir" class="inv">Jammu and Kashmir</div>
+                                    <div id="Jharkhand" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h5>E FLAME
+                                                </h5>
+                                                <p>SHOP NO 16, 1 ST FLOOR BASHANTA COMPLEX ,NEAR NEW DAILY MARKET Main
+                                                    Road
+                                                </p>
+                                                <p>RANCHI,JH
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h5>HIND AUTOMOBILE
+                                                </h5>
+                                                <p>KHATA NO 82, PLOT NO 372, OPPOSITE OF PACHAMBA HIGH SCHOOL MOUZA
+                                                    BHANDARIDIH WARD NO 1, GIRIDIH GIRIDIH
+                                                </p>
+                                                <p>7762023966
+                                                    <br> DEOGHAR
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h5>Resident Engineer</h5>
+                                                <p>Toll free 1800 572 4748</p>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Karnataka" class="inv">Karnataka</div>
+                                    <!-- <div id="Kerala" class="inv">Kerala</div> -->
+                                    <div id="Madhya Pradesh" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>MAA KAILA DEVI MOTORS
+                                                </h5>
+                                                <p>shkhiya bilash near jhansi road police station chandrabadni naka
+                                                    gwalior-474001
+                                                </p>
+                                                <p> 8878060000
+
+                                                    <br>
+                                                    GWALIOR
+
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748</p>
+                                                <h5>Resident Engineer
+                                                </h5>
+                                                <p>Toll free 1800 572 4748</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div id="Maharashtra" class="inv">
+                                        <h5>Parth E Vehicles
+                                        </h5>
+                                        <p>Plot no.925, Floor-, Juna Bagadganj, Kumbhartoli Chowk,Nagpur
+                                        </p>
+                                        <p>9503395295
+
+                                            <br> Nagpur
+                                        </p>
+                                    </div>
+                                    <!-- <div id="Manipur" class="inv">Manipur</div>
+                                    <div id="Meghalaya" class="inv">Meghalaya</div>
+                                    <div id="Mizoram" class="inv">Mizoram</div>
+                                    <div id="Nagaland" class="inv">Nagaland</div> -->
+                                    <div id="Odisha" class="inv"><div class="row">
+                                        <div class="col-md-3">
+                                            <h5>UNITED SERVICES
+                                            </h5>
+
+                                            <p>9800854444
+                                                <br>BERHAMPORE
+                                            </p>
+                                        </div>
+                                    </div></div>
+                                    <div id="Punjab" class="inv">
+                                        <h5>Resident Engineer
+
+                                        </h5>
+                                        <p>Kameshwar
+
+                                        </p>
+                                        <p>Toll free 1800 572 4748
+                                            <br>
+                                            Punjab
+
+
+                                        </p>
+                                    </div>
+                                    <div id="Rajasthan" class="inv">
+                                        <h5>GURUKRIPA E VEHICLES</h5>
+                                        <p>a-2,subash colony shastri nagar,opp rastrapati maidan</p>
+                                        <p>9828080809 <br> Jaipur</p>
+                                    </div>
+                                    <!-- <div id="Sikkim" class="inv">Sikkim</div>
+                                    <div id="Tamil Nadu" class="inv">Tamil Nadu</div> -->
+                                    <div id="Telangana" class="inv">
+                                        <h5>Axiom Service Center
+                                        </h5>
+                                        <p>Plot no:207/8,IDA Cherlapally,phase 2,Hyderabad,Telangana.
+                                        </p>
+                                        <p> 9959055178 <br>
+                                            Hyderabad</p>
+
+                                    </div>
+                                    <div id="Tripura" class="inv">Tripura</div>
+                                    <div id="Uttar Pradesh" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Axiom Service cnter
+
+                                                </h5>
+                                                <p>1ST FLOOR, SHOP NO-F2, RAJPAL PLAZA, SHINGAR NAGAR,Alambagh
+                                                </p>
+                                                <p>Toll free 1800 572 4748<br>Lucknow
+
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>AMBIKA ENTERPRISES</h5>
+                                                <p>122/232 A-2 SAROJANI NAGAR FAJALGANJ ,KANPUR-208012
+                                                </p>
+                                                <p>9554841214 <br>KANPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>GANGA ENTERPRISES
+                                                </h5>
+                                                <p>S-13/45, TELIYABAGH VARANASI
+                                                </p>
+                                                <p>7007270253<br>VARANASI
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>AMBA ENTERPRISES
+                                                </h5>
+                                                <p>583/5a , Nai Basti Keedganj Allahabad Uttar Pradesh 211003 India
+                                                </p>
+                                                <p>9336623268<br>Allahabad
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>SHIV SHAKTI
+                                                </h5>
+                                                <p>OPPOSITE KABRGAH PAIDLEGANJ SADAR,GORAKHPUR-273001
+                                                </p>
+                                                <p>7827874701<br>GORAKHPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>SUMIT TRADERS
+                                                </h5>
+                                                <p>suklaha kachehri road mirzapur
+                                                </p>
+                                                <p>9580029107<br>MIRZAPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>SHRI BIHARI JI AGENCY
+                                                </h5>
+                                                <p>near roadways bus stand shahjhanpur-242001
+                                                </p>
+                                                <p>8175823333<br>SHAHJHANPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>A TO Z MOTORS
+                                                </h5>
+                                                <p>shop no. 29 gate no. 1 zila parishad banda-210001
+                                                </p>
+                                                <p>7007167947/9889404226<br>BANDA
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>IDEAL AUTOMOBILE
+                                                </h5>
+                                                <p>PARVETI NIWAS ROADWAYS CIVIL LINE THE SADAR AZAMGARH UTTAR
+                                                    PRADESH-276001
+                                                </p>
+                                                <p>9839058896<br>AZAMGARH
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>RAJ AND COMPANY
+                                                </h5>
+                                                <p>RADHA NAGAR BANDA SAGAR ROAD FATEHPUR-212601
+                                                </p>
+                                                <p>9935853546<br>FATEHPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>RATHORE AGENCY
+                                                </h5>
+                                                <p>130 sector-1, anand nagar,lakhimpur road,sitapur
+                                                </p>
+                                                <p>7355185415<br>SITAPUR
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>SAMRIDHI ENTERPRISES
+                                                </h5>
+                                                <p>near shyam place banjari mod lko road bahraich-271801
+                                                </p>
+                                                <p>9919942953/7652002583<br>BAHRAICH
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>Santram Gupta
+                                                </h5>
+                                                <p>Pihani chungi raddhepurwa road, hardoi,241001
+                                                </p>
+                                                <p>9984510309<br>Hardoi
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>Kedar Industries
+                                                </h5>
+                                                <p>SHOP NO-4 KATORI MILL GDA MARKET, MOHAN NAGAR,Ghaziabad
+                                                </p>
+                                                <p>9911042488<br>GHAZIABAD
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                    <div id="Uttarakhand" class="inv">
+                                        <h5>H C ENTERPRISES
+
+                                        </h5>
+                                        <p>House no-13 gali no.-5, singh colony (udham singh nagar) rudrapur -263153
+
+                                        </p>
+                                        <p> 7417617633/9557464185
+                                            <br>
+                                            RUDRAPUR
+                                        </p>
+                                    </div>
+                                    <div id="West Bengal" class="inv">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h5>Rishi Enterprise
+                                                </h5>
+                                                <p>New sovaganj opposite of petrol pump Alipurduar ,West Bengal- 736121
+                                                </p>
+                                                <p>8942887872
+                                                    <br>Alipurduar
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>PRESIDENT ROLEY MOTORS
+
+                                                </h5>
+                                                <p>57(29/4)S.M.P SARANI,GANJA GALI ,BARRACKPORE NEAR RELIANCE
+                                                    FRESH,BESIDE ALLAHABAD BANK BUILDING.KOLKATA-700123
+
+                                                </p>
+                                                <p>6289718196
+
+                                                    <br>Barrakpore
+
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>KHAN ENTERPRISE
+
+
+                                                </h5>
+                                                <p>3/3, Kobiraj idrish mondal 2nd bye lane,Baraipur ,west bengal-711103
+
+
+                                                </p>
+                                                <p>7450929826
+
+
+                                                    <br>Baraipur
+
+
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>S.K.ENTERPRISES</h5>
+                                                <p>3/3, Kobiraj idrish mondal 2nd bye lane,Baraipur ,west bengal-711103
+                                                </p>
+                                                <p>7450929826
+                                                    <br>Baraipur
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>S.K.ENTERPRISES</h5>
+                                                <p>3/3, Kobiraj idrish mondal 2nd bye lane,Baraipur ,west bengal-711103
+                                                </p>
+                                                <p>7584911404
+                                                    <br>MALDA
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h5>R P WINGS</h5>
+                                                <p>13, Sri pally, Balidanga Colony,Bardaman,West Bengal 713103
+                                                </p>
+                                                <p>7679040988<br>BARDAMAN
+                                                </p>
+                                                <hr>
+                                            </div>
+                                         
+                                            <div class="col-md-3">
+                                                <h5>RR GREEN WHEELS
+
+                                                </h5>
+                                                <p>Sukanta Pally, Satighat by pass road, Bankura - 722101
+                                                </p>
+                                                <p>7478016627
+
+                                                    <br>BANKURA
+
+                                                </p>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div>
+                </div>
+        </section>
+        <!--<section id="service">
+            <h1 class="text-center py-5">Service</h1>
+            <div class="container-fluid">
+                <div class="row" style="height: 50vh;">
+                    <div class="col-md-12">
+                        <iframe
+                            src="https://www.google.com/maps/d/viewer?mid=1di8wurvoyId5HZb2UjSEAlFPNz8uU5Y5&ll=18.565537400000018%2C78.2775651&z=17"
+                            width="1920px" height="450px"></iframe>
+                    </div>
+                  <div class="col-md-12">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1di8wurvoyId5HZb2UjSEAlFPNz8uU5Y5"
+                            width="100%" height="100%"></iframe>
+                    </div> 
+                </div>
+            </div>
+        </section> -->
+        <section id="contacts" class="bg-light" style="position: relative;">
+            <h1 class="text-center py-5">Service Program</h1>
+            <div class="container">
+                <div class="row  d-flex align-items-center">
+                    <div class="col-md-4 mb-3 text-center shadow-sm p-3 mb-5 bg-white rounded" style="height: 200px;">
+                        <div class="p-4 ">
+                            <h5>Exchange</h5>
+                            <p>
+                                Exchange your current charger with upgraded charger.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 text-center shadow-sm p-3 mb-5 bg-white rounded" style="height: 200px;">
+                        <div class=" p-4 ">
+                            <h5>Extended warranty</h5>
+                            <p>Extend your warranty by up to 24 months with our extended warranty programme. </p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 text-center shadow-sm p-3 mb-5 bg-white rounded" style="height: 200px;">
+                        <div class="p-4">
+                            <h5>Buy back</h5>
+                            <p>Get cash back on existing chargers.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact" class=" py-5">
+            <h1 class="text-center py-5">Book Your Service Request</h1>
+            <div class="container">
+                <div class="row">
+                    <form action="service.php" method="POST">
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">First Name </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Your first name" required pattern="[Aa-Zz]" maxlength="32" name="Name">
+                            </div>
+                          
+                        
+                       
+                            <div class="mb-3 col-md-6">
+                                <label for="formGroupExampleInput2" class="form-label">Mobile Number</label>
+                                <input type="tel" pattern="[0-9]{10}" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Enter your valid Toll free 1800 572 4748" required name="phone">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter your Toll free 1800 572 4748"  name="email">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">Charger Serial number</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Enter your charger serial number" required  maxlength="12"
+                                    name="Snumber">
+                            </div>
+                      
+                        
+                            <div class="mb-3 col-md-6">
+                                <label for="inputAddress2" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress"
+                                    placeholder="Enter your address" name="address" required>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Enter your city" required>
+                            </div>
+                       
+                             <div class="mb-3 col-md-6">
+                                <label for="inputCity" class="form-label">State</label>
+                                <input type="text" class="form-control" id="inputCity" name="state" placeholder="Enter your state" required>
+                            </div>
+
+                            <!--<div class="mb-3 col-md-6">
+                             <label for="inputState" class="form-label">State</label>
+                              <input type="text" class="form-control" id="inputAddress">
+                                placeholder="Enter Your State" name="state" required>
+                               <select id="inputState" class="form-select" name="state" required>
+                                    <option selected>Choose...</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <select>
+                                   </select>
+                            </div>-->
+                            <div class="col-md-6">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip"
+                                    pattern="([1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3})" name="zip" placeholder="Enter pincode">
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
+                                name="message" placeholder="Type your query here..."></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="faqs" class="bg-dark text-white">
+            <h1 class="text-center py-5">Service FAQ's</h1>
+            <div class="container">
+                <div class="row d-flex align-items-center py-5">
+                    <div class="col-md-4 mb-4">
+                        <h5>How can I contact for service enquiry ?</h5>
+                        <p>Please fill the Form above. Our representative will call you within 24 hours.</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>What is the Axiom Product warranty</h5>
+                        <p>12 months against any manufacture defects.</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5>What is the out of warranty service cost</h5>
+                        <p>Refer the chart given below:- Warranty & Cost</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5> How and where can I get my product serviced</h5>
+                        <p>Get your complain registered at (Toll Free: 1800-572-4748). If you have difficulties in
+                            registring on toll free number kindly fill the form and our representative will contact you
+                            in 24 hours.
+                            Form above.</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5> How to apply for extended warranty.</h5>
+                        <p>Extended warranty will be available when purchasing charger first time. for other information
+                            kindly contact our service team: 1800-572-4748.</p>
+                        <hr>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <h5>How do I clean Axiom Products</h5>
+                        <p>We only recommend dry cleaning of exteriors with a clean cloth. For off board chargers (
+                            Chargers with cooling via fan and open air vents on both sides) any form of liquid cleaning
+                            is to be completely avoided. Only onboard chargers with IP 67 rating ( completely sealed
+                            chargers which may have fans on top) and above to be cleaned with liquid.</p>
+                        <hr>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h5>What is all covered under warranty</h5>
+                        <p>Generally warranty is considered against any manufacturing defects. however the fallowing may
+                            be a list of exceptions (but not limited to only these)</p>
+                        <div class="unorder-list">
+                            <li>Connector damages</li>
+                            <li>Any liquid ingress</li>
+                            <li>Tampering with warranty sticker</li>
+                            <li>Physical damages to the charger</li>
+                            <li>Damages to any external fans, cables.</li>
+                            <li>unathasraised opening or servicing of products</li>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <h5> How can I know there is a fault in the product</h5>
+                        <p>The following can be the possible symptoms of internal failure:
+
+                            If the LED is are completely not glowing despite input power being available.
+                            If only red LED glows despite input power being available.
+                            if fan doesn’t rotate (LEDs may glow or may not glow ).
+                            If LEDs blink randomly or unusually from their regular behaviour.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bd-footer  bg-dark text-white text-center">
+        <div class="container py-5">
+            <div class="row">
+
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="./about.html">About</a></li>
+                        <li class="mb-2"><a href="./service.html">Service</a></li>
+                        <li class="mb-2"><a href="./contact.html">Contact</a></li>
+                        <!-- <li class="mb-2"><a href="#">Blog</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Chargers</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480006.pdf">48V06A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480010.pdf">48V10A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480015.pdf">48V15A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK480018.pdf">48V18A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2EA480025.pdf">48V25A</a></li>
+
+
+
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Chargers</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/C2CK480030 .pdf">48V30A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2CK600006.pdf">60V06A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2BK600010.pdf">60V10A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C2AK600015.pdf">60V15A</a></li>
+                        <li class="mb-2"><a href="#">72V10A</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>DC-DC Converters</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Brouchuer/B1KK120010.pdf">48V/12V-15A</a></li>
+                        <li class="mb-2"><a href="./Brouchuer/C1EE120030.pdf">48V/12V-30A</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Privacy</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./Terms-Conditions.html">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="./Disclaimer.html">Disclaimer</a></li>
+                        <li class="mb-2"><a href="./privacy-policy.html">Privacy & Policy</a></li>
+                        <!-- <li class="mb-2"><a href="#">Career</a></li> -->
+                        <!-- <li class="mb-2"><a href="#">Help</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark ">
+            <div class="row text-center">
+                <ul class="list-unstyled small text-muted ">
+                    <li class="mb-0" py-2>Designed and built with all the love by <a
+                            href="https://github.com/sawarkar-bhongir"> Axiom. </a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        document
+            .getElementById('target')
+            .addEventListener('change', function () {
+                'use strict';
+                var vis = document.querySelector('.vis'),
+                    target = document.getElementById(this.value);
+                if (vis !== null) {
+                    vis.className = 'inv';
+                }
+                if (target !== null) {
+                    target.className = 'vis';
+                }
+            });
+    </script>
+
+</body>
+
+</html>
